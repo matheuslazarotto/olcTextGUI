@@ -10,7 +10,7 @@ application. !Currently the key input is based on ABNT2 format, but it can be
 easily adapted to US format, requiring only a few changes in `HandleInputKey()` 
 function!
 
-![](img/figures/app-demo.png)
+<img std="img/figures/app-demo.png" width=90>
 
 ## Usage
 To use, a right mouse click in canvas starts an adjustable text box which is settled 
