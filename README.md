@@ -2,17 +2,47 @@
 A prototype for a text Guided User Interface (GUI) for the olcPixelGameEngine
 
 ## Description
-This application is currently a crude version of a text GUI made from and for olcPGE programs. As now, it allows one to click in the canvas and create a text line 
-box, with cursor, key and mouse click automatic handling. The code released here provides a example on how it can be used and managed from an olcPGE based application. !Currently the key input is based on ABNT2 format, but it can be easily adapted to US, requiring only a few changes in the `HandleInputKey()` function!
+This program is currently a crude version of a text GUI made for olcPGE applications. 
+In its current state, it allows one to click in the canvas to create a text line 
+box with adjustable size, with cursor, key and mouse handling. The code released 
+here provides an example on how it can be used and managed from an olcPGE based 
+application. !Currently the key input is based on ABNT2 format, but it can be 
+easily adapted to US format, requiring only a few changes in `HandleInputKey()` 
+function!
 
 ## Usage
-To use, right click in canvas starts the text box, after selecting a fitting size, left click to setted and is ready to type. Repetting this process allows the creation of multiple text line boxes. Click inside|outside current existing boxes to activate|deactivate them.
+To use, a right mouse click in canvas starts an adjustable text box which is settled 
+by a left click, afterwhich is ready to type. Repetting this process allows the 
+creation of multiple text line boxes. A click inside(outside) a current existing 
+box will activate(deactivate) it.
+
+## Install
+The makefile attached provides all flags for compilation, considering Linux OS, 
+requiring only a `make` command. Although olcPGE is multiplatform, this code is 
+primarily made for Linux OS, without any testing in Windows, however, it shall be 
+trivially portable. 
+
+In order to run on Linux, the application must be executed with `vblank_mode=0 ./application`, 
+avoiding FPS locking. The olcPGE compilation requires basic obtainable libraries, which 
+can be retrieved in Ubuntu with:
+
+`sudo apt install build-essential libglu1-mesa-dev libpng-dev`
+
+More information for other distros can be found at:
+https://github.com/OneLoneCoder/olcPixelGameEngine/wiki/Compiling-on-Linux
 
 # Credits
-This application is fully develop from and for the olcPixelGameEngine, as made by Javidx9, the One Lone Coder https://github.com/OneLoneCoder/olcPixelGameEngine. The original README file can be found and further details can be found in the engine header file, as originally provided.
+This application is fully developed from and for the olcPixelGameEngine, as provided 
+by Javidx9, the One Lone Coder https://github.com/OneLoneCoder/olcPixelGameEngine. 
+The original README and LICENSE files can be found attached, along with further details 
+in the engine header file.
 
 # Future Features
 * + font styles
-* color settings
+* Color settings
+* Copy and paste command
+* Text selection for cut and copy
 * Automatic detection of keyboard format (ABNT2 / US)
-* better portability and easiness of use to any olcPGE based application 
+* Better portability and ease of use
+
+Author: M. Lazarotto (Last Update: 04/01/2021)
