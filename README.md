@@ -10,6 +10,8 @@ application. !Currently the key input is based on ABNT2 format, but it can be
 easily adapted to US format, requiring only a few changes in `HandleInputKey()` 
 function!
 
+![](img/figures/app-demo.png)
+
 ## Usage
 To use, a right mouse click in canvas starts an adjustable text box which is settled 
 by a left click, afterwhich is ready to type. Repetting this process allows the 
